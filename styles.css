@@ -1,0 +1,284 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* NAVBAR SECTION */
+li{
+    list-style-type: none;
+}
+
+.top1{
+    display: inline-block;
+    position: absolute;
+    right:40%;
+    top: .7%;
+    font-size: 20px;
+    padding:10px;
+}
+.top2{
+    display: inline-block;
+    position: absolute;
+    right: 30%;
+    top: .7%;
+    font-size: 20px; 
+    padding:10px;  
+}
+.top3{
+    display: inline-block;
+    position: absolute;
+    right:20%;
+    top: .7%;
+    font-size: 20px;
+    padding:10px;
+}
+.top4{
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    top: .7%;
+    font-size: 20px;
+    border:2px solid red;
+    background-color: red;
+    padding:10px 30px;
+    color:#fff;
+    border-radius: 0 0 10px 0;
+}
+
+#top-img{
+    padding-left: 3%;
+    padding-top: .7%;
+
+}
+
+ /* CTA SECTION*/
+.cta{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  margin-top: 200px;
+  padding: 20px 80px;
+  
+}
+
+.thick-line{
+  position: absolute;
+  top: 542px;
+  left: 220px;
+}
+.cta-btn{
+  display: inline-block;
+    border:2px solid red;
+    background-color: red;
+    padding:10px 30px;
+    color:#fff;
+    border-radius: 0 0 10px 0;
+}
+.cta-btn1{
+   display: inline-block;
+    border:2px solid gray;
+    background-color: gray;
+    padding:10px 30px;
+    color:#fff;
+    border-radius: 0 0 10px 0;
+ }
+ 
+  /*IMPACT SECTION*/
+ #impact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    background-image: url(https://zuri.team/img/hero-bg.svg?fbclid=IwAR1_RNfrlLZK4PPedj8TutH6s1fZoCrWzeDv1wsJAzIp4yOfY9MI5uQNxKQ);
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-color:#fff5ee;
+    padding: 100px 60px ;
+   
+ }
+ .country{
+   border: 2px solid white;
+   background-color: white;
+   padding: 3px;
+   margin: 3px;
+   
+   
+ }
+ 
+  /* COURSES SECTION*/
+ #course{
+   background-color: white;
+   margin: 60px 100px;
+ }
+ 
+ .course1{
+   background-color: white;
+   border: 2px solid ghostwhite;
+   box-shadow: 0 0  20px 5px ghostwhite;
+   display: inline-block;
+   padding: 10px 15px;
+   margin: 10px;
+   font-size: 25px;
+   
+ }
+
+ .course-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ }
+ .course-grid1{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+ }
+    
+    /* HIRE SECTION*/
+  #hire{
+    background-color: #fffff0;
+    padding: 20px 50px;
+       
+}
+.hire-grid{
+   display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  
+}
+.hire-container{
+    border: 2px solid white;
+    border-radius: 0 0 50px 0;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 20px;
+    z-index: 1;
+    margin-top:10px;
+    font-size: 22px;
+    
+}
+
+
+.hire-grid1{
+   display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  
+}
+.hire-img{
+    
+    padding: 10px 180px;
+}
+.hire-img1{
+   
+    padding: 10px 0 10px 280px;
+  
+  
+}
+.hire-container:hover{
+    background-color: black;
+    color: white;
+}
+#btn{
+  margin-left:600px;
+}
+
+.hire-btn{
+    display: inline-block;
+    font-size: 20px;
+    border:2px solid red;
+    background-color: red;
+    padding:10px 30px;
+    color:#fff;
+    border-radius: 0 0 10px 0;
+    margin:20px;
+
+    
+}
+.hire-btn1{
+    display: inline-block;
+    font-size: 20px;
+    border:2px solid gray;
+    background-color: gray;
+    padding:10px 30px;
+    color:#fff;
+    border-radius: 0 0 10px 0;
+   
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: white;
+}
+footer{
+    background-color: black;
+    position: relative;
+    padding: 10px 30px;
+    margin: 0;
+}
+.footer-img{
+    padding-left: 20px;
+    margin: 50px;
+}
+ #footer-div{
+    display: inline;
+    position: absolute;
+    right: 10px;
+    margin: 50px;
+    padding-left: 10px;
+}
+footer > div > img{
+    padding-left: 5px;
+}
+.footer-p{
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+   
+    
+}
+@media screen and (max-width: 600px)  {
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    .top1,.top2,.top3{
+        display: none;
+
+    }
+    .cta,#impact,.hire-grid,.hire-grid1{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .course-grid,.course-grid1{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .hire-img1{
+       padding-left: 160px; 
+    }
+    #btn{
+        margin-left:10%;
+      }
+      h1{
+        font-size: 20px;
+      }
+      .cta-img{
+        width: 400px;
+      }
+      .cta{
+        
+        margin-top: 100px;
+        padding: 20px 40px;
+        
+      }
+      #impact,#course,.cta-btn,.cta-btn1{
+        margin: 20px;
+      }
+      .footer-p{
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+      }
+}
